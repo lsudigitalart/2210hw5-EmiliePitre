@@ -18,6 +18,7 @@ function setup() {
   createCanvas(602, 602);
   background(255);
   ellipseMode(RADIUS);
+  frameRate(10);
 }
 
 function draw() {
@@ -38,8 +39,10 @@ function draw() {
     arc(x2, y2, 20, 20, HALF_PI, PI);
   }
 
+  push();
   noFill();
   strokeWeight(300);
   stroke(255);
   ellipse(0, 0, radius + 150);
+  pop();
 }
