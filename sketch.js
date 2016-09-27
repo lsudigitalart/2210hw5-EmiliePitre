@@ -38,10 +38,8 @@ function draw() {
     arc(x2, y2, 20, 20, HALF_PI, PI);
   }
 
-  push();
   noFill();
   strokeWeight(300);
   stroke(255);
   ellipse(0, 0, radius + 150);
-  pop();
 }
